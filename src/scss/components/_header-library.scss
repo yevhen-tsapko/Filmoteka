@@ -1,0 +1,73 @@
+.header-library {
+  background-image: url(../../img/library/header-bg-mob_x.jpg);
+}
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .header-library {
+    background-image: url(../../img/library/header-bg-mob_2x.jpg);
+  }
+}
+.header__nav {
+  margin-bottom: 60px;
+}
+.buttons-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.library-button {
+  width: 130px;
+  height: 44px;
+  color: currentColor;
+  font-size: 12px;
+
+  text-transform: uppercase;
+  background-color: transparent;
+  border-radius: 5px;
+  border: solid 2px;
+  &--active {
+    background-color: #ff6b01;
+    border-color: #ff6b01;
+  }
+}
+@include tablet {
+  .header-library {
+    background-image: url(../../img/library/header-bg-tab_x.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .header-library {
+      background-image: url(../../img/library/header-bg-tab_2x.jpg);
+    }
+  }
+  .buttons-wrap {
+    justify-content: center;
+    gap: 32px;
+  }
+  .library-button {
+    width: 152px;
+  }
+}
+
+@include desktop {
+  .header-library {
+    background-image: url(../../img/library/header-bg-desk_x.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .header-library {
+      background-image: url(../../img/library/header-bg-desk_2x.jpg);
+    }
+  }
+  .buttons-wrap {
+    gap: 16px;
+  }
+  .library-button {
+    width: 147px;
+  }
+}

@@ -2,10 +2,11 @@
   padding-top: 40px;
   padding-bottom: 92px;
   background-image: url(../../img/main/header-bg-mob_x.jpg);
-  color: #fff;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  color: #fff;
+  font-family: Roboto, sans-serif;
 }
 @media (min-device-pixel-ratio: 2),
   (-webkit-min-device-pixel-ratio: 2),
@@ -25,57 +26,71 @@
   display: flex;
   align-items: center;
   gap: 10px;
-}
-.logo__icon {
-}
-.logo__name {
-  display: none;
+  transition: all 200ms linear;
+
+  &__name {
+    display: none;
+  }
+  &:hover,
+  &:active,
+  &:focus {
+    scale: 1.1;
+  }
 }
 .nav {
-  font-family: Roboto;
   font-size: 12px;
   font-weight: 500;
   line-height: 1.1;
-  // text-align: center;
-}
-.nav__list {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  justify-content: space-between;
-}
-.nav__item {
-}
-.nav__link {
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: space-between;
+  }
+  &__item {
+    position: relative;
+    transition: all 200ms linear;
+  }
+  &__item:hover,
+  &__item:active,
+  &__item:focus {
+    scale: 1.1;
+  }
+  &__item--current::before {
+    position: absolute;
+    bottom: -2px;
+    content: '';
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #c73838;
+  }
 }
 .search-form {
   position: relative;
-}
-.search-form__input {
-  width: 100%;
-  border-bottom: #fff solid 2px;
-  // height: 20px;
-  background-color: transparent;
-  color: currentColor;
-}
-.search-form__input::placeholder {
-  color: currentColor;
-  // font-family: Roboto;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.1;
-}
-.search-form__button {
-  position: absolute;
-  top: 0;
-  right: 5px;
-  width: 24px;
-  background-color: transparent;
-  border: none;
-  z-index: 5;
-}
-.search-form__icon {
-  fill: black;
+
+  &__input {
+    width: 100%;
+    border: none;
+    border-bottom: #fff solid 2px;
+    background-color: transparent;
+    color: currentColor;
+  }
+  &__input::placeholder {
+    color: currentColor;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.1;
+  }
+  &__button {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    width: 24px;
+    background-color: transparent;
+    border: none;
+  }
 }
 @include tablet {
   .header {
@@ -103,8 +118,19 @@
   }
 }
 @include desktop {
-  .search-form {
-    margin-left: 442px;
-    margin-right: 442px;
+  .header {
+    background-image: url(../../img/main/header-bg-desk_x.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .header {
+      background-image: url(../../img/main/header-bg-desk_2x.jpg);
+    }
+    .search-form {
+      margin-left: 442px;
+      margin-right: 442px;
+    }
   }
 }
