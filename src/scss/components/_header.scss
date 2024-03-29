@@ -1,0 +1,110 @@
+.header {
+  padding-top: 40px;
+  padding-bottom: 92px;
+  background-image: url(../../img/main/header-bg-mob_x.jpg);
+  color: #fff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .header {
+    background-image: url(../../img/main/header-bg-mob_2x.jpg);
+  }
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 54px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo__icon {
+}
+.logo__name {
+  display: none;
+}
+.nav {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.1;
+  // text-align: center;
+}
+.nav__list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: space-between;
+}
+.nav__item {
+}
+.nav__link {
+}
+.search-form {
+  position: relative;
+}
+.search-form__input {
+  width: 100%;
+  border-bottom: #fff solid 2px;
+  // height: 20px;
+  background-color: transparent;
+  color: currentColor;
+}
+.search-form__input::placeholder {
+  color: currentColor;
+  // font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.1;
+}
+.search-form__button {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  width: 24px;
+  background-color: transparent;
+  border: none;
+  z-index: 5;
+}
+.search-form__icon {
+  fill: black;
+}
+@include tablet {
+  .header {
+    padding-top: 40px;
+    padding-bottom: 81px;
+    background-image: url(../../img/main/header-bg-tab_x.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .header {
+      background-image: url(../../img/main/header-bg-tab_2x.jpg);
+    }
+  }
+  .header__nav {
+    margin-bottom: 40px;
+  }
+  .logo__name {
+    display: block;
+  }
+  .search-form {
+    margin-left: 216px;
+    margin-right: 216px;
+  }
+}
+@include desktop {
+  .search-form {
+    margin-left: 442px;
+    margin-right: 442px;
+  }
+}
