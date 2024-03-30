@@ -1,12 +1,12 @@
 .header-library {
-  background-image: url(../../img/library/header-bg-mob_x.jpg);
+  background-image: url(./img/library/header-bg-mob_x.jpg);
 }
 @media (min-device-pixel-ratio: 2),
   (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .header-library {
-    background-image: url(../../img/library/header-bg-mob_2x.jpg);
+    background-image: url(./img/library/header-bg-mob_2x.jpg);
   }
 }
 .header__nav {
@@ -33,14 +33,14 @@
 }
 @include tablet {
   .header-library {
-    background-image: url(../../img/library/header-bg-tab_x.jpg);
+    background-image: url(./img/library/header-bg-tab_x.jpg);
   }
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .header-library {
-      background-image: url(../../img/library/header-bg-tab_2x.jpg);
+      background-image: url(./img/library/header-bg-tab_2x.jpg);
     }
   }
   .buttons-wrap {
@@ -54,14 +54,14 @@
 
 @include desktop {
   .header-library {
-    background-image: url(../../img/library/header-bg-desk_x.jpg);
+    background-image: url(./img/library/header-bg-desk_x.jpg);
   }
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .header-library {
-      background-image: url(../../img/library/header-bg-desk_2x.jpg);
+      background-image: url(./img/library/header-bg-desk_2x.jpg);
     }
   }
   .buttons-wrap {
