@@ -1,2 +1,2 @@
-import './scss/style.scss';
-import '.js/movie-api-service';
+import '../scss/style.scss';
+import './movie-api-service';
