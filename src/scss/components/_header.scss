@@ -1,7 +1,7 @@
 .header {
   padding-top: 40px;
   padding-bottom: 92px;
-  background-image: url(img/main/header-bg-mob_x.jpg);
+  background-image: url(../../img/main/header-bg-mob_x.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -13,7 +13,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .header {
-    background-image: url(img/main/header-bg-mob_2x.jpg);
+    background-image: url(../../img/main/header-bg-mob_2x.jpg);
   }
 }
 .header__nav {
@@ -96,14 +96,14 @@
   .header {
     padding-top: 40px;
     padding-bottom: 81px;
-    background-image: url(img/main/header-bg-tab_x.jpg);
+    background-image: url(../../img/main/header-bg-tab_x.jpg);
   }
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .header {
-      background-image: url(img/main/header-bg-tab_2x.jpg);
+      background-image: url(../../img/main/header-bg-tab_2x.jpg);
     }
   }
   .header__nav {
@@ -119,7 +119,7 @@
 }
 @include desktop {
   .header {
-    background-image: url(img/main/header-bg-desk_x.jpg);
+    background-image: url(../../img/main/header-bg-desk_x.jpg);
   }
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
