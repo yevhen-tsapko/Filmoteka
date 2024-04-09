@@ -1,2 +1,4 @@
 import '../scss/style.scss';
-// import './movie-api-service';
+import renderGallery from './renderGallery';
+
+renderGallery();
