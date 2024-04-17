@@ -7,12 +7,13 @@ genresArray.forEach(genre => {
   genresObject[genre.id] = genre.name;
 });
 export default function addGenresToMovie(moviesArray) {
+  const genresArray = [];
   moviesArray.map(movie => {
-    movie.genres = [];
-    movie.genre_ids.forEach(id => movie.genres.push(genresObject[id]));
-    if (movie.genres.length > 2) {
-      movie.genres[2] = 'other';
-      movie.genres.length = 3;
+    movie.genre_ids.forEach(id => genresArray.push(genresObject[id]));
+    if (genresArray.length > 2) {
+      genresArray[2] = 'other';
+      genresArray.length = 3;
     }
+    movie.genres = genresArray.join(', ');
   });
 }
