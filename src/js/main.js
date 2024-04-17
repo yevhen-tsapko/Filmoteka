@@ -5,17 +5,17 @@ import Refs from './refs';
 import handleSearch from './searchMovie';
 const { gallery, searchForm } = Refs;
 
-renderGallery('trendingMovie', page);
+renderGallery();
 // paginationInstance.on('beforeMove', event => {
 //   page = event.page;
 //   console.log('page main=', page);
 //   renderGallery('trendingMovie', page);
 // });
 paginationInstance.on('afterMove', () => {
-  renderGallery('trendingMovie', page);
+  renderGallery();
   window.scrollTo({
     top: parseInt(getComputedStyle(gallery).height),
     behavior: 'smooth',
   });
 });
-// searchForm.addEventListener('submit', handleSearch);
+searchForm.addEventListener('submit', handleSearch);
