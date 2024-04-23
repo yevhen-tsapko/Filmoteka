@@ -4,13 +4,13 @@ import renderCard from './renderCard';
 import addGenresToMovie from './genres';
 import paginationInstance from './pagination';
 import renderModal from './renderModal';
-const { gallery } = Refs;
+const { gallery } = Refs();
 let currentPath = 'trendingMovie';
 let currentQuery = '';
 
 export default async function renderGallery(path, query = '') {
   const page = paginationInstance.getCurrentPage();
-  console.log('page', page);
+  // console.log('page', page);
   if (path) {
     currentPath = path;
   }
